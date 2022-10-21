@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Gochi+Hand&display=swap');
 
 body {
     min-height: 100vh;
     display: flex;
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'Comfortaa';
     font-size: 1rem;
 }
 
@@ -13,7 +13,7 @@ body {
     display: flex;
     min-width: 35vw;
     flex-direction: column;
-    background-color: rgb(157, 115, 204);
+    background-color: #9d73cc;
     justify-content: space-between;
     align-items: center;
 }
@@ -71,21 +71,96 @@ body {
 }
 
 .top {
-    background-color: beige;
-    flex: 0 1 30%;
+    flex: 0 1 25%;
     font-size: 1.4rem;
     padding: 10px;
 
 }
 
 .mid {
-    background-color: #919191;
-    width: 100%;
+    border: 5px solid white;
+    padding: 10px;
+    margin: 0;
+    width: 97%;
     flex: 0 1 40%;
+    box-shadow: 10px 15px 10px rgb(165, 165, 165);
+}
+
+.mid h2 {
+   padding-left: 50px
+}
+
+.form-container form{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(2, 280px);
+    grid-template-rows: repeat(3, 100px);
+    grid-gap: 8px;
+    justify-items: center;
+    align-items: center;
+}
+
+input {
+    border: none;
+    width: 13rem;
+    font-size: 1.1rem;
+    border-bottom: 2px double grey;
+    margin: 2px;
+    padding: 8px;
+    font-family: 'Comfortaa';
+}
+
+input:focus {
+    outline-width: 0px;
+    background-color: #e6e6e6;
+}
+
+input:valid {
+    border-color: green;
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input + span {
+    position: relative;
+}
+  
+input:required + span::after {
+    font-size: 0.7rem;
+    position: absolute;
+    content: "required";
+    color: white;
+    background-color: black;
+    padding: 4px 7px;
+    top: -30px;
+    left: -60px;
 }
 
 .bot {
-    background-color: bisque;
     width: 100%;
     flex: 0 1 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+.bot button {
+    font-family: 'Comfortaa';
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border: 2px solid #9d73cc;
+    border-radius: 20px;
+    background-color: white;
+    width: 100px;
+}
+
+.bot button:hover {
+    cursor: pointer;
+    transition: 1s;
+    background-color: #b399d1;
+    color: white;
 }
