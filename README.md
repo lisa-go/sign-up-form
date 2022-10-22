@@ -1,7 +1,7 @@
 # sign-up-form
 
-logo by lizbeth on thenounproject
-https://thenounproject.com/icon/cat-4003252/
+background by Marissa Grootes on unsplash
+https://unsplash.com/photos/YwPNWDNZHkg
 
-cat1 by Süheyl Burak on unsplash
+cat by Süheyl Burak on unsplash
 https://unsplash.com/photos/WhHc2Z9XV9k
